@@ -10,277 +10,106 @@
 </head>
 
 <body>
-    <button onclick="toggleTheme()" class="dark-mode-toggle">
-        <svg viewBox="0 0 1000 1000">
-            <style type="text/css">
-                .st0 {
-                    fill: #000;
-                }
+<div class="wrap">
+<div class="section" id="headline">
+    <div class="content">
+        <h1>David Travers</h1>
+        <h2>Sinking Spring, PA</h2>
+    </div>
+    <div class="header">
+        <p>Download pdf</p>
+        <p>email</p>
+        <p>phone</p>
+    </div>
+</div>
+<div class="section" id="intro">
+    <div class="header">
+        <h1>Profile</h1>
+    </div>
+    <div class="content">
+        <p>
+            College student with a strong interest in technology and media productions, and a focus in systems administration and live broadcast production.
+        </p>
+    </div>
+</div>
+<div class="section" id="education">
+    <div class="header">
+        <h1>Education</h1>
+    </div>
+    <div class="content">
+        <div class="school">
+            <h1><strong>Kutztown University</strong> — Kutztown, Pennsylvania<span class="right">Graduating May 2025</span></h1>
+            <h2>3.60 GPA</h2>
+            <h1>Dean's List<span class="right">2021-Present</span></h1>
 
-                .st1 {
-                    fill: #fff;
-                }
-            </style>
-            <g id="sun">
-                <circle class="st0" cx="500" cy="500" r="264.8" />
-                <g id="rays">
-                    <polygon class="st0" points="210.1,548.6 126,500 210.1,451.4 		" />
-                    <polygon class="st0" points="255.3,324 230.2,230.2 324,255.3 		" />
-                    <polygon class="st0" points="324,743.7 230.2,768.8 255.3,675 		" />
-                    <polygon class="st0" points="249.3,656.7 153,644 212.1,567 		" />
-                    <polygon class="st0" points="212.1,431.7 153,354.7 249.3,342 		" />
-                    <polygon class="st0" points="342,249.3 354.7,153 431.7,212.1 		" />
-                    <polygon class="st0" points="432,786.9 355,846 342.3,749.7 		" />
-                </g>
-            </g>
-            <g id="moon">
-                <path class="st1" d="M331,122.5L331,122.5c109.6,0.4,198.4,169.2,198.4,377.3S440.6,876.7,331,877.1v0.4c248.5,0,450-169,450-377.5
-		S579.5,122.5,331,122.5z" />
-            </g>
-        </svg>
-    </button>
-    <div id="doc2" class="yui-t7">
-        <!--<button onclick="toggleTheme()" class="dark-mode-toggle">Toggle Dark Mode</button>-->
-        <div id="inner">
-            <div id="hd">
-                <div class="yui-gc">
-                    <div class="yui-u first">
-                        <h1>David Travers</h1>
-                        <h2>Sinking Spring, PA</h2>
-                    </div>
-                    <div class="yui-u">
-                        <div class="contact-info">
-                            <h3>
-                                <a id="pdf" href="https://djtravz.github.io/David%20Travers%20-%20Resume.pdf">Download PDF</a>
-                            </h3>
-                            <h3>
-                                <a href="mailto:djtravz@gmail.com">djtravz<span class="at">@</span>gmail.com</a>
-                            </h3>
-                            <h3>(610) 781-5528</h3>
-                        </div>
-                        <!--// .contact-info -->
-                    </div>
-                </div>
-                <!--// .yui-gc -->
-            </div>
-            <!--// hd -->
-            <div id="bd">
-                <div id="yui-main">
-                    <div class="yui-b">
-                        <div class="yui-gf">
-                            <div class="yui-u first">
-                                <h2>Profile</h2>
-                            </div>
-                            <div class="yui-u">
-                                <p class="enlarge">
-                                    College student with a strong interest in technology and media productions, and a focus in systems administration and live broadcast production.
-                                </p>
-                            </div>
-                        </div>
-                        <!--// .yui-gf -->
-                        <div class="yui-gf">
-                            <div class="yui-u first">
-                                <h2>Education</h2>
-                            </div>
-                            <div class="yui-u edu">
-                                <h2>
-                                    <strong>Kutztown University</strong> — Kutztown, Pennsylvania
-                                    <span class="year">Graduating May 2025</span>
-                                </h2>
-                                <h3>
-                                    <i>3.60 GPA</i>
-                                </h3>
-                                <p><h4>Dean's List</h4>
-                                    <span class="year">2021-Present</span><br>
-                                </p>
-                                <h4>Relevant Courses:</h4>
-                                <ul class="courses">
-                                    <li>Computer Science I</li>
-                                    <li class="last">Precalculus</li>
-                                </ul>
-                                <ul class="courses">
-                                    <li>Computer Sceince II</li>
-                                    <li class="last">Fund. Studio Production</li>
-                                </ul>
-                                <ul class="courses">
-                                    <li>Advanced Scientific Programming</li>
-                                    <li class="last">Computer Ethics</li>
-                                </ul>
-                            </div>
-                            <div class="yui-u edu">
-                                <h2><br><br>
-                                    <strong>Wilson High School</strong> — West Lawn, Pennsylvania
-                                    <span class="year">Graduated June 2021</span>
-                                </h2>
-                                <h3>
-                                    <i>3.82 GPA</i>
-                                </h3>
-                                <h4>Honors:</h4>
-                                <p>High Honor Roll
-                                    <span class="year">2014-2015, 2017-2020</span>
-                                </p>
-                                <p>Honor Roll
-                                    <span class="year">2014-2019</span>
-                                </p>
-                                <h4>Relevant Courses:</h4>
-                                <ul class="courses">
-                                    <li>AP Computer Science Principals</li>
-                                    <li>Honors Precalculus</li>
-                                    <li class="last">Honors Physics</li>
-                                </ul>
-                                <ul class="courses">
-                                    <li>AP Computer Science A</li>
-                                    <li>Honors Biology</li>
-                                    <li class="last">Principles of Engineering</li>
-                                </ul>
-                                <ul class="courses">
-                                    <li>AP Statistics</li>
-                                    <li>Honors Chemistry</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--// .yui-gf -->
-                        <div class="yui-gf">
-                            <div class="yui-u first">
-                                <h2>Skills</h2>
-                            </div>
-                            <div class="yui-u">
-                                <ul class="skills">
-                                    <li>Adobe Suite, Google Workspace, Microsoft Office</li>
-                                    <li>GNU/Linux (Xubuntu, Manjaro), Microsoft Windows, Apple MacOS</li>
-                                    <li>C++, Python 2.7/3.x, Java, JavaScript, HTML, CSS</li>
-                                    <li>Live Broadcast Production, Audio Mixing, Post-Production Editing</li>
-                                    <li>Building Desktops, Chromebook Repair, KACE</li>
-                                    <li>Organizing Groups, Planning Events</li>
-                                    <li class="last">Chinese Language (basic)</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--// .yui-gf-->
-                        <div class="yui-gf">
-                            <div class="yui-u first">
-                                <h2>Work</h2>
-                            </div>
-                            <div class="yui-u">
-                                <div class="job-wide">
-                                    <h2>Wilson School District Summer Preventative Maintainance Technician</h2>
-                                    <h4>Jun-Aug 2021, Jun-Aug 2022</h4>
-                                    <p>Wilson's summer crew requires knowledge of maintenance to upkeep computers provided to every student for the upcoming school year. Most student devices were returned and, as such, would cleaning or full maintainance. For consideration, employees need to work quickly and on their feet and are required to have a technology focused background as well as an extensive understanding of the entire district's technology infrastructure. Besides hardware repair, faculty laptops and classroom desktops need to be imaged and maintained so they can be reliable during the school year. This position is paid and takes place for the length of each summer.</p>
-                                </div>
-                                <!-- <div class="job last">
-                                    <h2>Wilson Technology Department</h2>
-                                    <h4>2020-2021</h4>
-                                    <p>Technology Operations' student learning positions provide an opportunity for students to work daily with the members of the tech department to study all aspects of technology support, including computer hardware and software, networking, and data management in an educational environment.</p>
-                                </div> -->
-                            </div>
-                            <div class="yui-u first">
-                                <h2>Internships</h2>
-                            </div>
-                            <!--// .yui-u -->
-                            <div class="yui-u">
-                                <div class="job">
-                                    <h2>Wilson Media Productions</h2>
-                                    <h4>2020-2021</h4>
-                                    <p>Wilson Media Productions' student learning positions provide an opportunity for students to work daily in an authentic job setting with the Media Production manager to study all aspects of video production as well as media support for staff and students in an educational environment.</p>
-                                </div>
-                                <div class="job">
-                                    <h2>Wilson Technology Department</h2>
-                                    <h4>2020-2021</h4>
-                                    <p>Technology Operations' student learning positions provide an opportunity for students to work daily with the members of the tech department to study all aspects of technology support, including computer hardware and software, networking, and data management in an educational environment.</p>
-                                </div>
-                            </div>
-                            <br>
-                            <!--// .yui-u -->
-                        </div>
-                        <!--// .yui-gf -->
-                        <div class="yui-gf last">
-                            <div class="yui-u first">
-                                <h2>Extracurricular</h2>
-                            </div>
-                            <div class="yui-u">
-                                <h5><b>Kutztown University</b></h5>
-                                <div class="talent">
-                                    <h2>Super Smash Bros. Ultimate Team
-                                        <span class="year">2021-Present</span>
-                                    </h2>
-                                </div>
-                                <div class="talent">
-                                    <h2>Overwatch Team
-                                        <span class="year">2021-Present</span>
-                                    </h2>
-                                </div>
-                            </div>
-                            <br><br>
-                            <div class="yui-u">
-                                <h5><b><br>Wilson High School</b></h5>
-                                <div class="talent">
-                                    <h2>Wilson Media Productions
-                                        <span class="year">2017-Present</span>
-                                    </h2>
-                                    <p>Event Coordinator
-                                        <span class="year">2019-2020</span>
-                                    </p>
-                                    <p>Vice President
-                                        <span class="year">2019-2020</span>
-                                    </p>
-                                    <p>President
-                                        <span class="year">2020-2021</span>
-                                    </p>
-                                </div>
-				<div class="talent">
-                                    <h2>WHS Smash Club
-                                        <span class="year">2019-2021</span>
-                                    </h2>
-                                    <p>President
-                                        <span class="year">2020-2021</span>
-                                    </p>
-                                </div>
-				<div class="talent">
-                                    <h2>WHS Esports
-                                        <span class="year">2020-2021</span>
-                                    </h2>
-                                    <p>Founder
-                                        <span class="year">2020-2021</span>
-                                    </p>
-				    <p>Super Smash Bros. Ultimate Bulldog Blitz (top 32)
-                                        <span class="year">2021</span>
-                                    </p>
-                                </div>
-                                <div class="talent">
-                                    <h2>Gay Straight Alliance
-                                        <span class="year">2017-2021</span>
-                                    </h2>
-                                    <p>Technical Officer
-                                        <span class="year">2019-2020</span>
-                                    </p>
-                                    <p>Treasurer
-                                        <span class="year">2020-2021</span>
-                                    </p>
-                                </div>
-                                <div class="talent">
-                                    <h2>East Asian Club
-                                        <span class="year">2017-2021</span>
-                                    </h2>
-                                    <p>Video Productions
-                                        <span class="year">2019-2021</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--// .yui-gf -->
-                    </div>
-                    <!--// .yui-b -->
-                </div>
-                <!--// yui-main -->
-            </div>
-            <!--// bd -->
-            <div id="ft">
-                <p>David Travers — <a href="mailto:djtravz@gmail.com">djtravz<span class="at">@</span>gmail.com</a> — (610) 781-5528</p>
-            </div>
-            <!--// footer -->
+            <table class="courses">
+                <caption>Relevant Courses:</caption>
+                <tr>
+                    <td>Computer Science I</td>
+                    <td>Computer Sceince II</td>
+                    <td>Advanced Scientific Programming</td>
+                </tr>
+                <tr class="last">
+                    <td>Precalculus</td>
+                    <td>Fund. Studio Production</td>
+                    <td>Computer Ethics</td>
+                </tr>
+            </table>
         </div>
-        <!-- // inner -->
-        <!--// doc -->
+        <div class="school last">
+            <h1><strong>Wilson High School</strong> — West Lawn, Pennsylvania<span class="right">Graduated June 2021</span></h1>
+            <h2>3.60 GPA</h2>
+            <h1>Honors:</h1>
+            <h3>High Honor Roll<span class="right">2014-2015, 2017-2020</span></h3>
+            <h3>Honor Roll<span class="right">2014-2019</span></h3>
+
+            <table class="courses">
+                <caption>Relevant Courses:</caption>
+                <tr>
+                    <td>Computer Science I</td>
+                    <td>Computer Sceince II</td>
+                    <td>Advanced Scientific Programming</td>
+                </tr>
+                <tr class="last">
+                    <td>Precalculus</td>
+                    <td>Fund. Studio Production</td>
+                    <td>Computer Ethics</td>
+                </tr>
+                <!-- <tr class="last">
+                    <td>hi</td>
+                    <td>hi</td>
+                    <td>hi</td>
+                </tr> -->
+            </table>
+        </div>
+    </div>
+</div>
+<div class="section" id="">
+    <div class="header">
+        <h1></h1>
+    </div>
+    <div class="content">
+        <p></p>
+    </div>
+</div>
+<div class="section" id="">
+    <div class="header">
+        <h1></h1>
+    </div>
+    <div class="content">
+        <p></p>
+    </div>
+</div>
+
+<div class="section last">
+    <div class="footer">
+        <p>David Travers — <a href="mailto:djtravz@gmail.com">djtravz<span class="at">@</span>gmail.com</a> — (610) 781-5528</p>
+    </div>
+</div>
+
+
 </div>
 </body>
+
+
 </html>
