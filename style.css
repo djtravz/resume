@@ -10,15 +10,23 @@
     font-family: "Saatliches";
     src: url("/fonts/Staatliches-Regular.ttf");
 }
+body {
+    background-color:var(--strong-back);
+}
+
 /* the primary page wrapper */
 .wrap {
-    margin-right: 10%;
-    margin-left: 10%;
-    padding-right: 10%;
-    padding-left: 10%;
-    background-color:antiquewhite;
+    margin: 5% 10% 5% 10%;
+    /* margin-left: 10%; */
+    padding: 0% 10% 0% 10%;
+    /* padding-left: 10%; */
+    background-color:var(--off-strong-back);
     font-size:12px;
     font-family: "Cabin";
+    
+    border-style: solid none none none;
+    border-color:var(--line);
+    border-width: 15px;
 }
 
 /* The primary section */
@@ -42,16 +50,60 @@
 .content {
     flex-grow:1;
     /* max-width:60%; */
+    
     min-width: 300px;
     width:70%;
     font-family: "Cabin";
+    padding: 2em 0 2em 0;
+    color: var(--text); 
 }
 
+strong {
+    font-weight:bold;
+}
+h1 {
+    color:var(--strong-text);
+}
+h2 {
+    color:var(--slight-strong-text);
+}
+a {
+    color:var(--link);
+}
+a:hover {
+    text-decoration: none;
+}
 
+.dark-mode-toggle {
+    background-color: var(--strong-text);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    right: 16px;
+    bottom: 16px;
+    position: fixed;
+    box-shadow: 0px 5px 25px var(--shadow);
+    cursor:pointer;
+    padding:0;
+    border-color:transparent;
+    outline:none;
+}
+.dark-mode-toggle svg { 
+    width: 100%; 
+    height: 100%; 
+}
 
 /* globalish font settings */
 .header h1 {
     font-family: 'Cabin Condensed';
+    font-size:2em;
+    /* margin-bottom: 1em; */
+}
+.header h2 {
+    font-family: 'Cabin Condensed';
+    font-size:1.8em;
+    padding-left:1em;
+    /* color:var(--slight-strong-text); */
 }
 
 /* section specific overrides */
@@ -64,15 +116,26 @@
 }
 #headline h2 {
     font-size: 2.5em;
-    margin-top:0px
+    margin-top:0px;
+    color:var(--slight-strong-text)
 }
 
 
 #intro p {
     padding-right:20%;
+    color: var(--slight-strong-text);
 }
 
 #education .content h1 {
+    /* font-family: "Cabin"; */
+    font-size:1.5em;
+    margin: 0 0 0 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-weight:normal;
+    padding-bottom:0.2em;
+}
+#education .content h3 {
     /* font-family: "Cabin"; */
     font-size:1em;
     margin: 0 0 0 0;
@@ -81,7 +144,7 @@
     font-weight:normal;
     padding-bottom:0.2em;
 }
-#education .content h3 {
+#education .content h4 {
     /* font-family: "Cabin"; */
     font-size:0.8em;
     margin: 0 0 0 0;
@@ -116,16 +179,40 @@ tr {
     border-width: 1px;
 }
 td {
+    color:var(--slight-strong-text);
     font-weight: normal;
     /* font-size: 0.7em; */
     text-align: left;
     /* margin-right: 1em; */
+    padding: 0.3em 1em 0.3em 0;
 }
 caption {
+    color:var(--slight-strong-text);
     text-align:left;
     padding-bottom:0.2em;
     /* font-size: 0.9em; */
 }
+li {
+    color:var(--slight-strong-text);
+    border-style: none none solid none;
+    border-color:gainsboro;
+    border-width: 1px;
+    
+    padding: 0.3em 0 0.3em 0;
+}
+
+.job h1 {
+    font-size: 1.5em;
+    margin-bottom: 0.2em;
+}
+.job h2 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+.job {
+    padding:0.5em;
+}
+
 /* #education .content h3 {
     font-size:1em;
     margin: 0 0 0 0;
@@ -134,9 +221,29 @@ caption {
     font-weight:normal;
     padding-top:0.2em;
 } */
+#extracurricular .content h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    padding-top:0.7em;
+}
+#extracurricular h2 {
+    font-size: 1.2em;
+    padding-top:0.5em;
+}
+#extracurricular p {
+    padding-top:0.2em;
+    font-size: 1em;
+}
 
+#footer {
+    text-align: center;
+    color:var(--light-text)
+}
 
-
+.at {
+    font-family:Arial, Helvetica, sans-serif
+}
 
 
 
@@ -154,4 +261,36 @@ caption {
 .right {
     text-align: right;
     float: right;
+}
+.flex {
+    display:flex;
+    flex-wrap:row;
+}
+
+
+
+.light {
+    --strong-back:#fff;
+    --off-strong-back:#f5f5f5;
+    --light-back:#ccc;
+    --line:#666;
+    --light-text:#444;
+    --text:#333;
+    --slight-strong-text:#222;
+    --strong-text:#000;
+    --link:#090;
+    --shadow:rgba(0, 0, 0, 1);
+}
+
+.dark {
+	--strong-back:#000;
+	--off-strong-back:#111;
+	--light-back:#bbb;
+	--line:#aaa;
+	--light-text:#bbb;
+	--text:#ccc;
+	--slight-strong-text:#ddd;
+	--strong-text:#fff;
+	--link:#5c5;
+	--shadow:rgba(255, 255, 255, 0.3);
 }
