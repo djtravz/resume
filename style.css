@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Cabin";
-    src: url("/fonts/Cabin-VariableFont_wdth.ttf");
+    src: url("fonts/Cabin-VariableFont_wdth.ttf");
 }
 @font-face {
     font-family: "Cabin Condensed";
-    src: url("/fonts/CabinCondensed-Medium.ttf");
+    src: url("fonts/CabinCondensed-Medium.ttf");
 }
 @font-face {
     font-family: "Saatliches";
-    src: url("/fonts/Staatliches-Regular.ttf");
+    src: url("fonts/Staatliches-Regular.ttf");
 }
 body {
     background-color:var(--strong-back);
