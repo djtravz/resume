@@ -14,11 +14,12 @@ body {
     background-color:var(--strong-back);
 }
 
+
 /* the primary page wrapper */
 .wrap {
-    margin: 5% 10% 5% 10%;
+    margin: 5% 20% 5% 20%;
     /* margin-left: 10%; */
-    padding: 0% 10% 0% 10%;
+    padding: 0% 5% 0% 5%;
     /* padding-left: 10%; */
     background-color:var(--off-strong-back);
     font-size:12px;
@@ -120,10 +121,40 @@ a:hover {
     color:var(--slight-strong-text)
 }
 
+#headline .header {
+    padding-top:1.5em;
+}
+
+#headline .header p {
+    text-align: center;
+    margin-bottom:1em;
+    color: var(--text); 
+}
+
+#headline .header button {
+    /* margin-right:50%;
+    margin-left:50%; */
+    display:inline;
+}
+
+a#pdf { 
+    display: block; 
+    /* float: left;  */
+    background: var(--line); 
+    color: var(--strong-back); 
+    padding: 6px 12px 6px 12px; 
+    margin:10px;
+    /* margin-bottom: 6px;  */
+    text-decoration: none;
+}
+a#pdf:hover { 
+    background: var(--slight-strong-text); 
+}
 
 #intro p {
     padding-right:20%;
     color: var(--slight-strong-text);
+    font-size: 1.4em;
 }
 
 #education .content h1 {
@@ -293,4 +324,18 @@ li {
 	--strong-text:#fff;
 	--link:#5c5;
 	--shadow:rgba(255, 255, 255, 0.3);
+}
+
+@media print {
+    button {
+        visibility: hidden;
+    }
+    .wrap {
+        margin: 10%;
+        padding: 0;
+    }
+    .pagebreak { page-break-before: always; }
+    .spacer {
+        padding-bottom: 5%;
+    }
 }
