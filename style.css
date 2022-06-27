@@ -336,6 +336,9 @@ div,h1,h2,h3,h4,p,td,caption,body {
     button {
         visibility: hidden;
     }
+    .pdf {
+        display:none;
+    }
     .wrap {
         margin: 10%;
         padding: 0;
