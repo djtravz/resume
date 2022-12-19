@@ -198,6 +198,9 @@ a#pdf:hover {
     font-style: italic;
     font-size:0.8em;
 }
+h2.right {
+    font-size:2em;
+}
 .school {
     margin-bottom: 2em;
 }
@@ -279,7 +282,9 @@ li {
     font-family:Arial, Helvetica, sans-serif
 }
 
-
+p {
+    font-size: 1.4em;
+}
 
 
 
